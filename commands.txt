@@ -55,3 +55,19 @@ conf t
 int fa3/0
 ip add 192.168.10.193 255.255.255.224
 no shut
+
+
+enable 
+conf t
+
+semrpe utilizar os endereços de rede de extremidades 
+ip route 
+<rede destino>
+<mascara da rede destion> 
+<getway mais proxima"quem me leva">
+
+
+ip route 192.168.10.128 255.255.255.224 200.246.10.1
+ip route 192.168.10.192 255.255.255.224 200.246.10.1
+ip route 192.168.10.0 255.255.255.224 200.246.10.1
+
