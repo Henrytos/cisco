@@ -1,0 +1,57 @@
+21/10/2024
+
+Rotedor costumizado = PT Empitty
+
+getway do servidor vai ser o getway mais proximo do aparelho
+
+
+COMANDOS SCRIPT 
+
+r1
+ena
+conf t
+hostname r1
+int g0/0
+ip add 192.168.10.1 255.255.255.224
+no shut
+int g0/1
+ip add 200.246.10.5 255.255.255.252
+no shut
+
+===============================
+
+r2
+conf t
+ena
+hostname r2
+int g0/0
+ip add 200.246.10.2 255.255.255.252
+no shut
+int g0/1
+ip add 192.168.10.65 255.255.255.224
+no shut
+
+
+======================
+r3
+ena
+conf t
+hostname r3
+int fa0/0
+ip add 200.246.10.5 255.255.255.252
+no shut
+int fa2/0
+ip add 200.246.10.1 255.255.255.252
+no shut
+int fa2/0
+ip add 200.246.10.1 255.255.255.252
+no shut
+
+int fa1/0
+ip add 192.168.10.129 255.255.255.224
+no shut 
+
+conf t
+int fa3/0
+ip add 192.168.10.193 255.255.255.224
+no shut
