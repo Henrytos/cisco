@@ -1,0 +1,14 @@
+
+configuraçaõ roteamento estatico(RIP)
+
+ena
+conf t
+router rip 
+version 2
+network 192.168.50.0
+network 200.10.40.0 => adiciona 
+no network 200.10.40.0 => tira
+no auto-summary 
+
+
+tracert 192.168.50.130 => ver recorrencia de roteamento

@@ -1,0 +1,44 @@
+
+R1
+
+ena 
+conf t 
+hostname R1
+int g0/0
+ip add 200.10.40.1 255.255.255.252
+no shut
+int g0/1
+ip add 192.168.50.1 255.255.255.192
+no shut
+
+
+=====================================================
+
+R2
+
+ena 
+conf t 
+hostname R2
+int g0/0
+ip add 200.10.40.2 255.255.255.252
+no shut
+int g0/1
+ip add 200.10.40.5 255.255.255.252
+no shut
+int g0/2
+ip add 192.168.50.65 255.255.255.192
+no shut
+
+
+R3
+
+ena 
+conf t 
+hostname R3
+int g0/0
+ip add 192.168.50.129 255.255.255.192
+no shut
+int g0/1
+ip add 200.10.40.6 255.255.255.252
+no shut
+
