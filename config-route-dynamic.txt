@@ -12,3 +12,10 @@ no auto-summary
 
 
 tracert 192.168.50.130 => ver recorrencia de roteamento
+
+---------------------------------------ESTUDOS---------------------------------------
+# arquivos metadados
+# roteamento estatico(ultima atividade ./config-route-static-wan.pkt) 
+# roteamento dinamico (ultima atividade ./config-route-dinamic-current.pkt)
+
+
